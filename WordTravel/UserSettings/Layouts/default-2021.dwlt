@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Simulator
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,7 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 8096}
   vertical: 0
-  controlID: 53
+  controlID: 43
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 54
+  controlID: 44
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: SceneView
+  m_Name: SimulatorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -193,13 +193,13 @@ MonoBehaviour:
     height: 730.8
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 13}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 13}
   - {fileID: 11}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 2
+  m_Selected: 2
+  m_LastSelected: 0
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -417,9 +417,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: a01d0200bc1d0200da1d0200b01d0200de1d0200d61d0200c01d0200a41d0200901d0200941d0200b41d0200981d0200b81d0200c41d0200d01d0200a81d0200ac1d0200c81d02009c1d0200cc1d0200
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 0654ffff5054ffff2e56ffff3656ffffce56fffff471ffffa27affff0abbffff58bbffff0abdffff16bdffff26fbffff9e5f0000a65f000062600000949d000022630100cc6501000c670100306b0100366d0100eab30100
+      m_ExpandedIDs: 222bffff6e2bffff502dffff682dffff782dffffc844ffff1445fffffa46ffff1647ffff2a47ffffd649ffffc64affffd451ffffea53ffffc454ffff6c57ffffb857ffff9e59ffffb259ffffbe59ffffb05cffff265fffff1061ffff5462ffff1868ffff7c6bffff4c6dffff3470ffff1472fffff473ffff827bffff5485ffff74a1ffffc0a1ffff9aa3ffffa8a3ffffaca3ffff30acffff70e8ffff5aefffffd6efffff28f5ffff26fbfffff4ffffff9eee00009a1f0100eaf70100dafb010008000200ceb1020002b30200c2b3020066fe0200
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -723,9 +723,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.62206864, y: -19.292955, z: -0.5295456}
+    m_Target: {x: 1.0561415, y: -3.8018122, z: -0.4371039}
     speed: 2
-    m_Value: {x: 0.62206864, y: -19.292955, z: -0.5295456}
+    m_Value: {x: 1.0561415, y: -3.8018122, z: -0.4371039}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -776,9 +776,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.2202735
+    m_Target: 7.2641816
     speed: 2
-    m_Value: 4.2202735
+    m_Value: 7.2641816
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -844,22 +844,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites/Photos
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Sprites/Photos
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Program Files\Unity\Unity Projects\WordTravel
+  m_LastProjectPath: C:\Program Files\Unity\Unity Projects\GitControlled\WordTravel\WordTravel
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d41d0200
-    m_LastClickedID: 138708
-    m_ExpandedIDs: 00000000d8610000da610000ee610000f2610000
+    m_SelectedIDs: c4700000
+    m_LastClickedID: 28868
+    m_ExpandedIDs: 00000000c0700000c4700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -887,7 +887,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000d8610000da610000
+    m_ExpandedIDs: 00000000c0700000c2700000c4700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -915,7 +915,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000
+    m_ExpandedInstanceIDs: c6230000387100003a7100003c710000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -939,7 +939,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 288.2}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 132
@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_SerializedViewNames:
   - UnityEditor.GameView
   m_SerializedViewValues:
-  - C:\Program Files\Unity\Unity Projects\WordTravel\Library\PlayModeViewStates\789c1488f6f8f544faa6ff86967cf44f
+  - C:\Program Files\Unity\Unity Projects\GitControlled\WordTravel\WordTravel\Library\PlayModeViewStates\ae7450949eda01248a0c0b91d91f5de6
   m_PlayModeViewName: Device Simulator
   m_ShowGizmos: 0
   m_TargetDisplay: 0

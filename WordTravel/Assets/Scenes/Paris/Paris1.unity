@@ -598,7 +598,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 258958139}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 375529963}
+        m_TargetAssemblyTypeName: WordsContainer, Assembly-CSharp
+        m_MethodName: NextLevelButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &258958139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -741,6 +753,7 @@ MonoBehaviour:
   defaultColor: {r: 0.8666667, g: 0.28627452, b: 0.043137256, a: 1}
   pressedColor: {r: 0.5566038, g: 0.16433065, b: 0, a: 1}
   letterCircle: {fileID: 869307306}
+  clickSound: {fileID: 1431229195}
 --- !u!58 &270729692
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -991,6 +1004,7 @@ MonoBehaviour:
   watchAdPopUp: {fileID: 1166846693}
   totalScoresText: {fileID: 1731244796}
   scoreText: {fileID: 1027449303}
+  rightWord: {fileID: 817774923}
 --- !u!1 &377786281
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,7 +1225,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SELECT LEVEL
+  m_Text: MAIN MENU
 --- !u!222 &391171655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1471,6 +1485,7 @@ MonoBehaviour:
   defaultColor: {r: 0.8666667, g: 0.28627452, b: 0.043137256, a: 1}
   pressedColor: {r: 0.5566038, g: 0.16433065, b: 0, a: 1}
   letterCircle: {fileID: 869307306}
+  clickSound: {fileID: 1431229195}
 --- !u!58 &504302696
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2135,7 +2150,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375529963}
         m_TargetAssemblyTypeName: WordsContainer, Assembly-CSharp
-        m_MethodName: HomeButton
+        m_MethodName: ExitButton
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2451,6 +2466,84 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &817774922
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1671114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7630963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.38443717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214372656446750573, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_Name
+      value: RightWord
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_Pitch
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_Volume
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 70f1e8b0eba191542870e55c3eab5b97, type: 3}
+    - target: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: addf783282646294bbcd3dff13644df7, type: 3}
+--- !u!82 &817774923 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+  m_PrefabInstance: {fileID: 817774922}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &821619000
 GameObject:
   m_ObjectHideFlags: 0
@@ -3332,6 +3425,7 @@ MonoBehaviour:
   defaultColor: {r: 0.8666667, g: 0.28627452, b: 0.043137256, a: 1}
   pressedColor: {r: 0.5566038, g: 0.16433065, b: 0, a: 1}
   letterCircle: {fileID: 869307306}
+  clickSound: {fileID: 1431229195}
 --- !u!58 &1088225727
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3824,6 +3918,7 @@ MonoBehaviour:
   defaultColor: {r: 0.8666667, g: 0.28627452, b: 0.043137256, a: 1}
   pressedColor: {r: 0.5566038, g: 0.16433065, b: 0, a: 1}
   letterCircle: {fileID: 869307306}
+  clickSound: {fileID: 1431229195}
 --- !u!58 &1177640575
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4154,6 +4249,72 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1001 &1431229194
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1671114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.7630963
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.38443717
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1626505982829779260, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214372656446750573, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_Name
+      value: Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: addf783282646294bbcd3dff13644df7, type: 3}
+--- !u!82 &1431229195 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 4221192746070195096, guid: addf783282646294bbcd3dff13644df7, type: 3}
+  m_PrefabInstance: {fileID: 1431229194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431406366
 GameObject:
   m_ObjectHideFlags: 0

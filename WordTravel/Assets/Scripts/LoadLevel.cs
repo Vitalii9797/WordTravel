@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class LoadLevel : MonoBehaviour
 {
     [SerializeField] private int levelIndex;
+    [SerializeField] AudioSource clickSound;
 
     private void Start()
     {
@@ -17,6 +18,7 @@ public class LoadLevel : MonoBehaviour
     }
     public void StartLevel(string level)
     {
+        clickSound.Play();
         SceneManager.LoadScene(level);
     }
 }

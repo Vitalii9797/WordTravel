@@ -10,6 +10,7 @@ public class Letter : MonoBehaviour
     [SerializeField] Color defaultColor;
     [SerializeField] Color pressedColor;
     [SerializeField] LetterCircle letterCircle;
+    [SerializeField] AudioSource clickSound;
 
     private bool selected = false;
     private bool pressed = false;   
@@ -30,6 +31,7 @@ public class Letter : MonoBehaviour
             sRenderer.color = pressedColor;
             letterCircle.currentWord = letterValue;
             letterCircle.currentWordText.text = letterCircle.currentWord;
+            clickSound.Play();
         }
         
     }
@@ -40,6 +42,7 @@ public class Letter : MonoBehaviour
         {
             selected = true;
             sRenderer.color = pressedColor;
+            clickSound.Play();
             letterCircle.UpdateCurrentWord(letterValue);
         }
     }

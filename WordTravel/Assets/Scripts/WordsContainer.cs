@@ -15,6 +15,8 @@ public class WordsContainer : MonoBehaviour
     [SerializeField] private Text totalScoresText;
     [SerializeField] private Text scoreText;
 
+    [SerializeField] AudioSource rightWord;
+
     private int scores;
 
     private const int letterHintCost = 5;
@@ -32,6 +34,7 @@ public class WordsContainer : MonoBehaviour
             if(clueWords[i].clueWord == currentWord && clueWords[i].wordSolved == false)
             {
                 clueWords[i].SolveClueLetters();
+                rightWord.Play();
             }
         }
         CheckSolvedWords();
@@ -61,9 +64,9 @@ public class WordsContainer : MonoBehaviour
             {
                 int randomIndex = Random.Range(0, clueWords.Count - 1);
                 clueWords[randomIndex].RevealRandomLetter();
+                GameData.SetScores(GameData.GetScores() - letterHintCost);
+                scoreText.text = GameData.GetScores().ToString();
 
-                scores -= letterHintCost;
-                GameData.SetScores(scores);
             }
             CheckSolvedWords();
         }
@@ -81,9 +84,9 @@ public class WordsContainer : MonoBehaviour
             {
                 int randomIndex = Random.Range(0, clueWords.Count - 1);
                 clueWords[randomIndex].SolveClueLetters();
-
-                scores -= wordHintCost;
-                GameData.SetScores(scores);
+                rightWord.Play();
+                GameData.SetScores(GameData.GetScores() - wordHintCost);
+                scoreText.text = GameData.GetScores().ToString();
             }
             CheckSolvedWords();
         }
@@ -97,7 +100,6 @@ public class WordsContainer : MonoBehaviour
     private void LevelComplete()
     {
         totalScoresText.text = scores.ToString();
-        GameData.SetScores(scores);
         GameData.SetLevelIndex(levelIndex);
         winPopUp.SetActive(true);
     }
@@ -105,15 +107,24 @@ public class WordsContainer : MonoBehaviour
     public void HomeButton()
     {
         SceneManager.LoadScene(0);
+        GameData.SetScores(GameData.GetScores() + scores);
+
     }
 
     public void NextLevelButton()
     {
+        GameData.SetScores(GameData.GetScores() + scores);
         SceneManager.LoadScene(nextLevel);
+
     }
 
     public void CancelAdsButton()
     {
         watchAdPopUp.SetActive(false);
+    }
+
+    public void ExitButton()
+    {
+        SceneManager.LoadScene(0);
     }
 }
