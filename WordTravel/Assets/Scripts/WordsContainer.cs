@@ -6,18 +6,27 @@ using UnityEngine.UI;
 
 public class WordsContainer : MonoBehaviour
 {
+    [Header("Level indexes")]
     [SerializeField] private int levelIndex;
     [SerializeField] private string nextLevel;
-    [Space]
+
+    [Space][Header("Words Lists")]
     [SerializeField] private List<ClueWord> clueWords;
+    [SerializeField] private List<string> extraWords;
+
+    [Space][Header("Assigned private fields")]
     [SerializeField] private GameObject winPopUp;
     [SerializeField] private GameObject watchAdPopUp;
     [SerializeField] private Text totalScoresText;
     [SerializeField] private Text scoreText;
-
-    [SerializeField] AudioSource rightWord;
+    [SerializeField] private Text extraWordsText;
+    [SerializeField] private AudioSource rightWord;
+    [SerializeField] private Animator extraWordsAnim;
+    [SerializeField] private AudioSource extraWord;
+    [SerializeField] private SkipAdScript skipAdScript;
 
     private int scores;
+    private int extraWordsCount;
 
     private const int letterHintCost = 5;
     private const int wordHintCost = 10;
@@ -26,17 +35,20 @@ public class WordsContainer : MonoBehaviour
     {
         scores = clueWords.Count;
         scoreText.text = GameData.GetScores().ToString();
+        extraWordsCount = PlayerPrefs.GetInt("extraWordsCount");
+        extraWordsText.text = extraWordsCount.ToString() + "/10";
     }
     public void CheckWord(string currentWord)
     {
         for (int i = 0; i < clueWords.Count; i++)
         {
-            if(clueWords[i].clueWord == currentWord && clueWords[i].wordSolved == false)
+            if (clueWords[i].clueWord == currentWord && clueWords[i].wordSolved == false)
             {
                 clueWords[i].SolveClueLetters();
                 rightWord.Play();
             }
         }
+        CheckExtraWord(currentWord);
         CheckSolvedWords();
     }
 
@@ -54,6 +66,36 @@ public class WordsContainer : MonoBehaviour
         }
         if(clueWords.Count == 0)
         LevelComplete();
+    }
+
+    private void CheckExtraWord(string currentword)
+    {
+        if(!extraWords.Contains(currentword))
+        {
+            return;
+        }
+        else
+        {
+            extraWord.Play();
+            extraWords.Remove(currentword);
+            extraWordsCount++;
+            PlayerPrefs.SetInt("extraWordsCount", extraWordsCount);
+            extraWordsText.text = extraWordsCount.ToString() + "/10";
+
+            if (extraWordsCount > 9)
+            {
+                GameData.SetScores(GameData.GetScores() + 5);
+                scoreText.text = GameData.GetScores().ToString();
+                extraWordsCount = 0;
+                PlayerPrefs.SetInt("extraWordsCount", extraWordsCount);
+                extraWordsText.text = extraWordsCount.ToString() + "/10";
+                extraWordsAnim.SetTrigger("addStar");
+            }
+            else
+            {
+                extraWordsAnim.SetTrigger("addWord");
+            }
+        }
     }
 
     public void UseLetterHint()
@@ -97,11 +139,21 @@ public class WordsContainer : MonoBehaviour
         
     }
 
+    public void AddExtraScores()
+    {
+        GameData.SetScores(GameData.GetScores() + 10);
+        scoreText.text = GameData.GetScores().ToString();
+    }
+
     private void LevelComplete()
     {
         totalScoresText.text = scores.ToString();
         GameData.SetLevelIndex(levelIndex);
         winPopUp.SetActive(true);
+        if(levelIndex != 0 && levelIndex % 3 == 0)
+        {
+            skipAdScript.ShowAd();
+        }
     }
 
     public void HomeButton()

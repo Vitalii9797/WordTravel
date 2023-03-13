@@ -5,17 +5,21 @@ using UnityEngine.UI;
 
 public class LetterCircle : MonoBehaviour
 {
+    [Header("Level Main Word")]
     public string word;
-    public string currentWord;
-    public bool wordSelectionStarted;
 
-    public Text currentWordText;
+    [HideInInspector]public bool wordSelectionStarted;
+    [HideInInspector]public string currentWord;
 
-    [SerializeField] private Alphabet alphabet;
+    [Space][Header("Lists of letters and their positions")]
     [SerializeField] private Letter[] letters;
+    [SerializeField]private Vector3[] lettersPositions;
+
+    [Space][Header("Constantly assigned fields")]
+    public Text currentWordText;
+    [SerializeField] private Alphabet alphabet;
     [SerializeField] private WordsContainer wordsContainer;
 
-    [SerializeField]private Vector3[] lettersPositions;
     System.Random random = new System.Random();
     void Start()
     {

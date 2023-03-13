@@ -27,6 +27,9 @@ public static class GameData
 
     public static void SetLevelIndex(int levelIndex)
     {
-        PlayerPrefs.SetInt("levelIndex", levelIndex + 1);
+        if(levelIndex == GetLevelIndex())
+        {
+            PlayerPrefs.SetInt("levelIndex", levelIndex + 1);
+        }
     }
 }

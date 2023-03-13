@@ -17,4 +17,118 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Paris/Paris2.unity
     guid: f9fdf032b0a47884d9b5fb7df489f0b8
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris3.unity
+    guid: 1fe7e53c0a4855a418776cb2a35e89e8
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris4.unity
+    guid: 177b01335d63cc34e9280a75dd51eb5f
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris5.unity
+    guid: 490405101d0a3c641ae3acaa8bdc53e3
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris6.unity
+    guid: 8683cabce14e94d47b73e96959a51449
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris7.unity
+    guid: 067e4ae1994a51a4190c077657985729
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris8.unity
+    guid: 541d7d332bee2ca409e5370a5ffd42fe
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris9.unity
+    guid: d10a9f044b6204040a3a4f55a8dbde94
+  - enabled: 1
+    path: Assets/Scenes/Paris/Paris10.unity
+    guid: af2ba0b031b85d340b510895427d3754
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome1.unity
+    guid: 69b0189911aee7449b7624ac3185b288
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome2.unity
+    guid: e27af3e26e63e5c48b5b8311e7dca41f
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome3.unity
+    guid: 422c5849a69de7c4e8de2d03903ff2ee
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome4.unity
+    guid: c75d256631693ed428eb86e5657ac9a8
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome5.unity
+    guid: fd36e9f2527353341b285562fcf39e5e
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome6.unity
+    guid: c1b56e3106998ad42904d8f047d3b4ea
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome7.unity
+    guid: 8f1c6ef392bf1d44289ab0cff8b7dc86
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome8.unity
+    guid: 2cf981a0dfdfba5479e5d797b2d4803a
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome9.unity
+    guid: 31485d0551cb39b418a1115c2ea3eedd
+  - enabled: 1
+    path: Assets/Scenes/Rome/Rome10.unity
+    guid: 2b98b7c326673e04ab68a69836277466
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny1.unity
+    guid: 7e2f0d53e2e6ac14bac4ed910ef3bb72
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny2.unity
+    guid: 3b8e56065e7c1814c8e3a66b2c808e0d
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny3.unity
+    guid: 52bc5fa0427baec499752b50578fc933
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny4.unity
+    guid: 56078ddf5a43e4541b049bd04dbde647
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny5.unity
+    guid: 9da27863a882a5c4e9c9bf02e3661c45
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny6.unity
+    guid: 293e944a35ed631449bf1a83323f8db6
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny7.unity
+    guid: e2a2a566532048841bd89856b05d60ad
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny8.unity
+    guid: 45f6b990b89ab184f9fea550c5e319a8
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny9.unity
+    guid: 91debeaef927b9a47ac6538406645d9b
+  - enabled: 1
+    path: Assets/Scenes/NewYork/Ny10.unity
+    guid: 1d37de0b6c17f684589d8548430d5855
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio1.unity
+    guid: 09d14096df13ba947b83736ecbe07f2e
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio2.unity
+    guid: 98b7a07166249c841a8f2bf13ceb7426
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio3.unity
+    guid: c89020c665533a74c84011c5e8572da8
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio4.unity
+    guid: 73d0ed71f2db6134592226f3695b4181
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio5.unity
+    guid: 28dfca8d93337084fa9a42adb8a1fc1e
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio6.unity
+    guid: bf39fa2f914b31442a50f6f5196d78c9
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio7.unity
+    guid: e4de65139d0a2874a9699e94940a864f
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio8.unity
+    guid: d995ed05140a2434baebf6e1c577b576
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio9.unity
+    guid: 808a101538a32fd4d98cab6f6c58ca8d
+  - enabled: 1
+    path: Assets/Scenes/Rio/Rio10.unity
+    guid: ec545c44877d5144c9aea6cc7391670b
   m_configObjects: {}
