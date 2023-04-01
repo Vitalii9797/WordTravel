@@ -131,4 +131,34 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Rio/Rio10.unity
     guid: ec545c44877d5144c9aea6cc7391670b
+  - enabled: 1
+    path: Assets/Scenes/London/London1.unity
+    guid: 92d1b89743096214f91bb2316564370a
+  - enabled: 1
+    path: Assets/Scenes/London/London2.unity
+    guid: 5ad508615a6356146a1db81dad0b63e5
+  - enabled: 1
+    path: Assets/Scenes/London/London3.unity
+    guid: 16efddab929b51e4c832e7de97b3d54b
+  - enabled: 1
+    path: Assets/Scenes/London/London4.unity
+    guid: 706716eeac11d6145bd12cea984403c8
+  - enabled: 1
+    path: Assets/Scenes/London/London5.unity
+    guid: f295ee75887126349acd7fdb19b03367
+  - enabled: 1
+    path: Assets/Scenes/London/London6.unity
+    guid: 3bb3940b3edf02d4599df4c620740556
+  - enabled: 1
+    path: Assets/Scenes/London/London7.unity
+    guid: 6a71e12162e68794995311dd654e571f
+  - enabled: 1
+    path: Assets/Scenes/London/London8.unity
+    guid: 92cb11805aee7aa4cb3d4a7c01aa315c
+  - enabled: 1
+    path: Assets/Scenes/London/London9.unity
+    guid: b169999fc9b1a314e9630b4de92f3564
+  - enabled: 1
+    path: Assets/Scenes/London/London10.unity
+    guid: 7eb423c7e3acdbe44b718ccc6c883696
   m_configObjects: {}
