@@ -161,4 +161,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/London/London10.unity
     guid: 7eb423c7e3acdbe44b718ccc6c883696
+  - enabled: 1
+    path: Assets/Scenes/Zaglushka.unity
+    guid: 535aa681dd821ac4aae6b99afc59f4aa
   m_configObjects: {}

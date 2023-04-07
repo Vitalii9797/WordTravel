@@ -166,8 +166,7 @@ public class WordsContainer : MonoBehaviour
     public void NextLevelButton()
     {
         GameData.SetScores(GameData.GetScores() + scores);
-        SceneManager.LoadScene(nextLevel);
-
+            SceneManager.LoadScene(nextLevel);
     }
 
     public void CancelAdsButton()
