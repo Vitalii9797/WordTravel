@@ -164,4 +164,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Zaglushka.unity
     guid: 535aa681dd821ac4aae6b99afc59f4aa
+  - enabled: 1
+    path: Assets/Scenes/Beijing/Beijing1.unity
+    guid: 2362570994b643d4fa8842d0267b5312
   m_configObjects: {}
